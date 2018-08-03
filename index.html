@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Countries</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="assets/css/bootstrap.css"/>
+        <link rel="stylesheet" href="assets/css/main.css"/>
+        <script src="assets/js/vendor/jquery/jquery-3.1.1.js"></script>
+        <script src="assets/js/vendor/bootstrap/bootstrap.js"></script>  
+        <script src="assets/js/main.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <!-- Search form -->
+                <div class="col-xs-12 col-sm-12 col-md-6" style="margin-top: 15px;">
+
+                    <div class="row">
+                        <label for="country">Име на държава</label>               
+                        <div class="input-group">      
+                            <input type="text" class="form-control" name="search-country" id="country" />  
+
+                            <div class="input-group-btn" role="group">
+                                <button type="button" class="btn btn-danger" onclick="searchForCountry()"><span class="glyphicon glyphicon-search"></span></button>
+                            </div>
+                        </div>
+                        <p class="help-block" id="alert">Трябва да изберете поне три от изброените опции</p>
+                    </div>
+                    <div class="row">
+                        <div id="checkboxes-container" >
+                            <div class="row">
+                                <div class="col-xs-12"  data-toggle="buttons" style="margin-top: 15px;">
+                                    <label class="btn btn-success"><input type="checkbox" name="region" value="Регион"/>Регион</label>
+                                    <label class="btn btn-success"><input type="checkbox" name="subregion" value="Подрегион"/>Подрегион</label>
+                                    <label class="btn btn-success"><input type="checkbox" name="area" value="Площ"/>Площ</label>
+                                </div>
+                            </div>
+                            <div  class="row">
+                                <div class="col-xs-12"  data-toggle="buttons" style="margin-top: 15px;">
+                                    <label class="btn btn-success"><input type="checkbox" name="capital" value="Столица"/>Столица</label>
+                                    <label class="btn btn-success"><input type="checkbox" name="population" value="Население"/>Население</label>
+                                    <label class="btn btn-success"><input type="checkbox" name="demonym" value="Националност"/>Националност</label>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <p class="help-block no-country-found" style="display:none">
+                        Не е намерена държава с такова име.
+                    </p>
+                    <div class="row alignment-button-container">
+                        <button id="alignment-button" type="button" class="btn btn-warning" onclick="alignment()">Вертикална подредба</button>
+                    </div>
+                    <!-- Information about the country -->
+
+                </div>
+                <div id="countries" class="col-xs-10">
+                    <!--                    <div class="order-by">
+                                            <button id="order" type="button" class="btn btn-primary active" onclick="order()">Grid</button>
+                                        </div>-->
+                    <p class="help-block alert-no-results alert alert-danger" style="display:none">Не е намерен филм с такова име &#x2639</p>
+                </div>
+                <div class="result-set" style="display:none">
+                    <div class="country-information">
+                        <h2 class="movie-name">Movie name</h2>
+                        <p class="checkbox-key-information" style="display:none">
+                            <span class="key"></span><span class="value"></span>
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>  
+
+
+    </div>
+    <!-- Testing Area -->
+
+</body>
+</html>

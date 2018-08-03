@@ -1,0 +1,48 @@
+
+label[for=country]{
+    font-size: 25px;
+}
+#checkboxes-container label{
+    width: 135px;
+}
+#alert{
+    display: none;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+.alignment-button-container{
+    margin-left: -15px;
+    margin-top: 15px;
+}
+
+.no-country-found{
+    margin-left: -15px;
+}
+.result-set{
+    border: 1px solid #cccccc ;
+    background-color: #f7f7f7;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+.country-information{
+    margin-left: 10px;
+}
+
+.result-set{
+    margin-bottom: 10px;
+}
+
+.key{
+    font-weight: bold;
+}
+
+.order-by{
+    margin-bottom: 10px;
+    display: none;
+}
+
+#countries{
+    margin-left: -15px;
+}
